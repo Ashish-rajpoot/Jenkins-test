@@ -25,11 +25,11 @@ public class AppTest
    public void testtrue() {
 	   Assert.assertEquals(true, true);
    }
-    @org.testng.annotations.Test
-    public void loadAmazonHomePage()
-    {
-    	final String siteUrl = "https://www.amazon.in/";
-    	WebDriver driver = RunEnvironment.getWebDriver();
-    	driver.get(siteUrl);
-    }
+//     @org.testng.annotations.Test
+//     public void loadAmazonHomePage()
+//     {
+//     	final String siteUrl = "https://www.amazon.in/";
+//     	WebDriver driver = RunEnvironment.getWebDriver();
+//     	driver.get(siteUrl);
+//     }
 }
