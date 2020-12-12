@@ -20,7 +20,7 @@ public class AppTest
    public void closeBrowser() {
 	   App.terminateBrowser();
    }
-    @Test
+    @org.testng.annotations.Test
     public void loadAmazonHomePage()
     {
     	final String siteUrl = "https://www.amazon.in/";
