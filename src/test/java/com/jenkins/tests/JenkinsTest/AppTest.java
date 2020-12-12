@@ -3,18 +3,28 @@ package com.jenkins.tests.JenkinsTest;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 /**
  * Unit test for simple App.
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+   @BeforeTest
+   public void startBrowser() {
+	   App.initBrowser();
+   }
+   @AfterTest
+   public void closeBrowser() {
+	   App.terminateBrowser();
+   }
     @Test
-    public void shouldAnswerWithTrue()
+    public void loadAmazonHomePage()
     {
-        assertTrue( true );
+    	final String siteUrl = "https://www.amazon.in/";
+    	WebDriver driver = RunEnvironment.getWebDriver();
+    	driver.get(siteUrl);
     }
 }
