@@ -4,6 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -19,6 +20,10 @@ public class AppTest
    @AfterTest
    public void closeBrowser() {
 	   App.terminateBrowser();
+   }
+   @org.testng.annotations.Test
+   public void testtrue() {
+	   Assert.assertEquals(true, true);
    }
     @org.testng.annotations.Test
     public void loadAmazonHomePage()
