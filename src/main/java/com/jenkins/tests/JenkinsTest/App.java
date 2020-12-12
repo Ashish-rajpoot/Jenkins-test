@@ -12,8 +12,8 @@ public class App
 	 public static void initBrowser()
 	    {
 	        WebDriver driver;
-	        final String driverPath = "/home/Ubuntu/Driver/chromedriver";
-	        final String setDriverStrin = "webdriver.chrome.driver";
+	        final String driverPath = "/home/Ubuntu/Driver/geckodriver";
+	        final String setDriverStrin = "webdriver.gecko.driver";
 	        System.setProperty(driverPath, setDriverStrin);
 	        driver = new ChromeDriver();
 	        RunEnvironment.setWebDriver(driver);
